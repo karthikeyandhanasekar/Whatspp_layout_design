@@ -1,0 +1,24 @@
+
+
+@media screen and (max-width: 1366px) {
+    *
+    {
+        font-size: 120%;
+    }
+    .secondhalf
+    {
+        display: none;
+    }
+    .firsthalf
+    {
+        width: 90%;
+    }
+    .searchinput
+    {
+        height: 10%;
+    }
+    ::placeholder
+{
+    padding-left: 10px;
+}
+}

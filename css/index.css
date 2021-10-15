@@ -1,0 +1,165 @@
+:root
+{
+    --bodycolor : #B2D2E4;
+    --profilecolor :#5C4E4E;
+    --shadowcolor : #83825B
+
+}
+
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   /* color: #4C4F53;*/
+   overflow: hidden;
+   
+}
+
+body
+{
+    background-color: var(--bodycolor);
+}
+
+section
+{
+    margin: 2rem;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    filter:drop-shadow(8px 8px 10px var(--shadowcolor));
+
+    
+    /*
+    display: grid;
+    grid-template-columns: repeat(2,minmax(auto,2fr));
+    */
+
+}
+/*
+section div
+{
+    border: 0.5px     solid transparent;
+
+}
+*/
+.firsthalf
+{
+    width: 32% ;
+    display: flex;
+    flex-direction: column;
+    height: 88vh;
+
+
+
+}
+.secondhalf
+{
+    width: 68%;
+}
+
+.profile
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--profilecolor);
+
+    
+    
+}
+.icons ,.profilepic
+{
+    display: inline-block;
+    height: 4vh;
+    cursor: grabbing;
+    margin: 1rem;
+
+}
+.profilepic
+{
+    border-radius: 50%;
+
+
+   
+}
+.searchinput
+{
+    padding-top: 5px;
+    height: 8vh;
+    padding-bottom: 5px;
+}
+.inputtype{
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 80%;
+    border-radius: 18px;
+    border: none;
+    background-color: #323739;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+
+
+
+}
+::placeholder
+{
+    padding-left: 40px;
+    font-weight: bold;
+}
+.contact
+{
+    display: flex ;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contactlist,.searchinput,.firsthalf
+{
+   background-color : var(--profilecolor)  ;
+
+   
+}
+.names
+{
+    color: white;
+
+}
+.contactlist :hover
+{
+    background-color: rgba(50,55,57,245);
+}
+.secondhalf .names
+{
+    width: 10rem;
+    margin-right: 35rem;
+    height: 5vh;
+
+}
+
+
+.chatsession
+{
+    background-image: url("../images/chatbackground.jpg");
+    height:initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 79vh;
+
+}
+.messageinput
+{
+    background-color: var(--profilecolor    );
+    display: flex;
+    
+}
+
+.messageinput .inputtype
+{
+    margin-right: 40rem;
+    height: 80%;
+}
